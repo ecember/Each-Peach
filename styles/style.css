@@ -2,9 +2,205 @@
 [selector] {
   [property]: [value];
 }
-
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
 /* Global Styles go here */
 body {
   background: white;
   color: black;
+  overflow-y: scroll;
+}
+img {
+  width: 100%;
+}
+.pp-page {
+  width: 100%
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.pp-story-container {
+  font-family: 'Libre Baskerville', serif;
+  height: 100%;
+  width: 100%;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 100px;
+  overflow: hidden;
+  position:relative;
+}
+
+.pp-tree {
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+}
+.pp-tree-container {
+  width: 120%;
+  position: relative;
+  overflow: hidden;
+  margin-left: -10%;
+  margin-top: 100px;
+}
+
+.pp-tree--left {
+  float: left;
+  overflow: hidden;
+}
+
+.pp-tree--right {
+  width: 40%;
+  float: right;
+  margin-right: -5%;
+  overflow: hidden;
+}
+
+
+.pp-branch--top {
+  top: 0%;
+  right: 20%;
+  width: 60%;
+  z-index: 3;
+  position: absolute;
+  transform: rotate(-5deg);
+  transform-origin: right bottom;
+  overflow: hidden;
+}
+
+.pp-branch--bottom {
+  top: 10%;
+  right: 29%;
+  width: 50%;
+  z-index: 2;
+  position: absolute;
+  overflow: hidden;
+}
+
+
+.pp-story-container2 {
+  font-family: 'Libre Baskerville', serif;
+  height: 100%;
+  width: 100%;
+  font-size: 60px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.pp-kitchen-container {
+  width: 110%;
+  position: relative;
+  overflow: hidden;
+  margin-left: -3%;
+}
+
+.pp-kitchen--left {
+  float: left;
+  overflow: hidden;
+  width: 30%;
+}
+
+.pp-kitchen--right {
+  width: 40%;
+  float: right;
+  margin-right: -5%;
+  overflow: visible;
+}
+
+.pp-kitchen {
+  position: relative;
+}
+
+.pp-dress--top {
+  margin-top: 31%;
+  right: 5%;
+  width: 43%;
+  z-index: 3;
+  position: absolute;
+  overflow: hidden;
+  border: solid 2px green;
+}
+
+.pp-dress--bottom {
+  margin-top: 30%;
+  right: 4%;
+  width: 110%;
+  z-index: 2;
+  position: absolute;
+  overflow: hidden;
+  border: solid 2px pink;
+}
+
+
+.pp-story-container3 {
+  font-family: 'Libre Baskerville', serif;
+  height: 100%;
+  width: 100%;
+  font-size: 60px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.pp-attic-container {
+  width: 120%;
+  position: relative;
+  overflow: hidden;
+  margin-left: -5%;
+}
+
+.pp-attic--left {
+  margin-top: 5%;
+  width: 40%;
+  margin-left: 4%;
+  float: left;
+  overflow: hidden;
+}
+
+.pp-attic--window {
+  width: 17%;
+  margin-left: 13%;
+  overflow: hidden;
+}
+
+.pp-attic--right {
+  width: 50%;
+  float: right;
+  margin-right: -5%;
+  overflow: hidden;
+}
+
+.pp-right--one {
+  margin-top: -9%;
+  margin-left: 8%;
+  width: 13%;
+  z-index: 1;
+  position: absolute;
+  overflow: hidden;
+  transform: rotate(26deg);
+  transform-origin: right bottom;
+  border: solid 2px orange;
+}
+
+.pp-right--two {
+  margin-top: -11%;
+  right: 12%;
+  width: 17%;
+  z-index: 2;
+  position: absolute;
+  overflow: hidden;
+  border: solid 2px blue;
+}
+
+.pp-right--three {
+  margin-top: 7%;
+  right: 24%;
+  width: 20%;
+  z-index: 3;
+  position: absolute;
+  overflow: hidden;
+  border: solid 2px red;
 }
