@@ -204,3 +204,22 @@ img {
   overflow: hidden;
   border: solid 2px red;
 }
+
+/* MOVE SWITCH STYLING */
+@keyframes move-left-to-right {
+  0% {
+    margin-left: 0;
+  }
+
+  50% {
+    margin-left: 60vw;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+.pp-branch--on .pp-tree-container .pp-tree--right .pp-branch--top .pp-left-to-right {
+  animation: move-left-to-right 5s ease infinite;
+}
