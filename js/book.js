@@ -13,11 +13,11 @@ $(function() {
     // })
 
     // Toggle Tom Thumb click and reveal
-    $('.js-pp-branch').on('click', function (e) {
-      e.preventDefault();
-      $('body').toggleClass('pp-branch--on');
-    })
-  }
-
-  init();
-});
+//     $('.js-pp-branch').on('click', function (e) {
+//       e.preventDefault();
+//       $('body').toggleClass('pp-branch--on');
+//     })
+//   }
+//
+//   init();
+// });

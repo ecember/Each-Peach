@@ -61,10 +61,17 @@ img {
   width: 60%;
   z-index: 3;
   position: absolute;
-  transform: rotate(-5deg);
-  transform-origin: right bottom;
+  /* transform: rotate(-5deg);
+  transform-origin: right bottom; */
   overflow: hidden;
+  transition: transform 2s;
 }
+
+.pp-branch--top: Toggle {
+  transform: rotate(20deg);
+  transform-origin: right bottom;
+}
+
 
 .pp-branch--bottom {
   top: 10%;
@@ -73,6 +80,12 @@ img {
   z-index: 2;
   position: absolute;
   overflow: hidden;
+  transition: transform 2s;
+}
+
+.pp-branch--bottom: toggle {
+  transform: rotate(-20deg);
+  transform-origin: right bottom;
 }
 
 
@@ -119,7 +132,12 @@ img {
   z-index: 3;
   position: absolute;
   overflow: hidden;
-  border: solid 2px green;
+  -webkit-transition:right 2s; /* Safari */
+transition: left-margin 2s;
+}
+
+.pp-dress--top: Toggle{
+  left-margin: 15%;
 }
 
 .pp-dress--bottom {
@@ -129,7 +147,6 @@ img {
   z-index: 2;
   position: absolute;
   overflow: hidden;
-  border: solid 2px pink;
 }
 
 
@@ -182,7 +199,39 @@ img {
   overflow: hidden;
   transform: rotate(26deg);
   transform-origin: right bottom;
-  border: solid 2px orange;
+  -webkit-animation-name: duster; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  animation-name: duster;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes duster {
+  0% {transform: rotate(26deg);
+  transform-origin: right bottom;}
+  25% {transform: rotate(-20deg);
+  transform-origin: right bottom;}
+  50% {transform: rotate(0deg);
+  transform-origin: right bottom;}
+  75% {transform: rotate(-20deg);
+  transform-origin: right bottom;}
+  100% {transform: rotate(26deg);
+  transform-origin: right bottom;}
+}
+
+/* Standard syntax */
+@keyframes duster {
+  0% {transform: rotate(26deg);
+  transform-origin: right bottom;}
+  25% {transform: rotate(-20deg);
+  transform-origin: right bottom;}
+  50% {transform: rotate(0deg);
+  transform-origin: right bottom;}
+  75% {transform: rotate(-20deg);
+  transform-origin: right bottom;}
+  100% {transform: rotate(26deg);
+  transform-origin: right bottom;}
 }
 
 .pp-right--two {
@@ -192,7 +241,6 @@ img {
   z-index: 2;
   position: absolute;
   overflow: hidden;
-  border: solid 2px blue;
 }
 
 .pp-right--three {
@@ -202,11 +250,10 @@ img {
   z-index: 3;
   position: absolute;
   overflow: hidden;
-  border: solid 2px red;
 }
 
 /* MOVE SWITCH STYLING */
-@keyframes move-left-to-right {
+/* @keyframes move-left-to-right {
   0% {
     margin-left: 0;
   }
@@ -222,4 +269,4 @@ img {
 
 .pp-branch--on .pp-tree-container .pp-tree--right .pp-branch--top .pp-left-to-right {
   animation: move-left-to-right 5s ease infinite;
-}
+} */
