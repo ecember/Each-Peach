@@ -182,8 +182,9 @@ img {
 
 .pp-attic--window {
   width: 17%;
-  margin-left: 13%;
+  margin-right: 0%;
   overflow: hidden;
+  position: relative;
 }
 
 .pp-attic--right {
@@ -194,9 +195,9 @@ img {
 }
 
 .pp-right--one {
-  margin-top: -9%;
+  margin-top: -10%;
   margin-left: 8%;
-  width: 13%;
+  width: 14%;
   z-index: 1;
   position: absolute;
   overflow: hidden;
@@ -257,22 +258,3 @@ img {
   position: absolute;
   overflow: hidden;
 }
-
-/* MOVE SWITCH STYLING */
-/* @keyframes move-left-to-right {
-  0% {
-    margin-left: 0;
-  }
-
-  50% {
-    margin-left: 60vw;
-  }
-
-  100% {
-    margin-left: 0;
-  }
-}
-
-.pp-branch--on .pp-tree-container .pp-tree--right .pp-branch--top .pp-left-to-right {
-  animation: move-left-to-right 5s ease infinite;
-} */
