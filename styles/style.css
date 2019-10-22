@@ -24,10 +24,11 @@ img {
   width: 100%;
   font-size: 60px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 300px;
   overflow: hidden;
-  position:relative;
+  position: absolute;
 }
+
 
 .pp-tree {
   width: 30%;
@@ -39,7 +40,7 @@ img {
   position: relative;
   overflow: hidden;
   margin-left: -10%;
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 .pp-tree--left {
@@ -50,41 +51,42 @@ img {
 .pp-tree--right {
   width: 40%;
   float: right;
-  margin-right: -5%;
+  margin-right: -8%;
   overflow: hidden;
 }
 
 
 .pp-branch--top {
   top: 0%;
-  right: 20%;
+  right: 23%;
   width: 60%;
   z-index: 3;
   position: absolute;
-  /* transform: rotate(-5deg);
-  transform-origin: right bottom; */
   overflow: hidden;
   transition: transform 2s;
+  transform: rotate(-5deg);
+  transform-origin: right bottom;
 }
 
-.pp-branch--top: Toggle {
+.pp-branch-trigger--active .pp-branch--top {
   transform: rotate(20deg);
+  transform-origin: right bottom;
+}
+
+.pp-branch-trigger--active .pp-branch--bottom {
+  transform: rotate(-15deg);
   transform-origin: right bottom;
 }
 
 
 .pp-branch--bottom {
   top: 10%;
-  right: 29%;
+  right: 35%;
   width: 50%;
   z-index: 2;
   position: absolute;
   overflow: hidden;
   transition: transform 2s;
-}
-
-.pp-branch--bottom: toggle {
-  transform: rotate(-20deg);
   transform-origin: right bottom;
 }
 
@@ -96,8 +98,8 @@ img {
   font-size: 60px;
   text-align: center;
   overflow: hidden;
-  position: relative;
-  margin-top: 100px;
+  position: absolute;
+  margin-top: 80px;
   margin-bottom: 100px;
 }
 
@@ -126,22 +128,23 @@ img {
 }
 
 .pp-dress--top {
-  margin-top: 31%;
+  margin-top: 36%;
   right: 5%;
   width: 43%;
   z-index: 3;
   position: absolute;
   overflow: hidden;
-  -webkit-transition:right 2s; /* Safari */
-transition: left-margin 2s;
+  -webkit-transition: margin-right 2s; /* Safari */
+  transition: margin-right 2s;
 }
 
-.pp-dress--top: Toggle{
-  left-margin: 15%;
+.pp-dress-trigger--active .pp-dress--top {
+  margin-right: 20%;
 }
+
 
 .pp-dress--bottom {
-  margin-top: 30%;
+  margin-top: 35%;
   right: 4%;
   width: 110%;
   z-index: 2;
@@ -199,6 +202,9 @@ transition: left-margin 2s;
   overflow: hidden;
   transform: rotate(26deg);
   transform-origin: right bottom;
+}
+
+.pp-duster-trigger--active .pp-right--one {
   -webkit-animation-name: duster; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
   animation-name: duster;
@@ -206,33 +212,33 @@ transition: left-margin 2s;
   animation-iteration-count: infinite;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes duster {
-  0% {transform: rotate(26deg);
-  transform-origin: right bottom;}
-  25% {transform: rotate(-20deg);
-  transform-origin: right bottom;}
-  50% {transform: rotate(0deg);
-  transform-origin: right bottom;}
-  75% {transform: rotate(-20deg);
-  transform-origin: right bottom;}
-  100% {transform: rotate(26deg);
-  transform-origin: right bottom;}
-}
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes duster {
+    0% {transform: rotate(26deg);
+    transform-origin: right bottom;}
+    25% {transform: rotate(-20deg);
+    transform-origin: right bottom;}
+    50% {transform: rotate(0deg);
+    transform-origin: right bottom;}
+    75% {transform: rotate(-20deg);
+    transform-origin: right bottom;}
+    100% {transform: rotate(26deg);
+    transform-origin: right bottom;}
+  }
 
-/* Standard syntax */
-@keyframes duster {
-  0% {transform: rotate(26deg);
-  transform-origin: right bottom;}
-  25% {transform: rotate(-20deg);
-  transform-origin: right bottom;}
-  50% {transform: rotate(0deg);
-  transform-origin: right bottom;}
-  75% {transform: rotate(-20deg);
-  transform-origin: right bottom;}
-  100% {transform: rotate(26deg);
-  transform-origin: right bottom;}
-}
+  /* Standard syntax */
+  @keyframes duster {
+    0% {transform: rotate(26deg);
+    transform-origin: right bottom;}
+    25% {transform: rotate(-20deg);
+    transform-origin: right bottom;}
+    50% {transform: rotate(0deg);
+    transform-origin: right bottom;}
+    75% {transform: rotate(-20deg);
+    transform-origin: right bottom;}
+    100% {transform: rotate(26deg);
+    transform-origin: right bottom;}
+  }
 
 .pp-right--two {
   margin-top: -11%;

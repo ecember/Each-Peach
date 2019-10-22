@@ -1,23 +1,24 @@
 $(function() {
   function init() {
-    // // Toggle bg colour on and off
-    // $('.js-sm-colour').on('click', function (e) {
-    //   e.preventDefault();
-    //   $('body').toggleClass('sm-colour--on');
-    // })
-    //
-    // // Toggle bg colour on and off
-    // $('.js-sm-position').on('click', function (e) {
-    //   e.preventDefault();
-    //   $('body').toggleClass('sm-position--on');
-    // })
+    // Toggle tree branch top and bottom
+    $('.pp-branch-trigger').on('click', function (e) {
+      e.preventDefault();
+      $('body').toggleClass('pp-branch-trigger--active');
+    })
 
-    // Toggle Tom Thumb click and reveal
-//     $('.js-pp-branch').on('click', function (e) {
-//       e.preventDefault();
-//       $('body').toggleClass('pp-branch--on');
-//     })
-//   }
-//
-//   init();
-// });
+    // Toggle mother hubbards dress
+    $('.pp-dress-trigger').on('click', function (e) {
+      e.preventDefault();
+      $('body').toggleClass('pp-dress-trigger--active');
+    })
+
+    // Toggle cinderellas duster
+    $('.pp-duster-trigger').on('click', function (e) {
+      e.preventDefault();
+      $('body').toggleClass('pp-duster-trigger--active');
+    })
+
+  }
+
+  init();
+});
