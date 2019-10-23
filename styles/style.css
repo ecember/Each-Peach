@@ -22,9 +22,9 @@ img {
   font-family: 'Libre Baskerville', serif;
   height: 100%;
   width: 100%;
-  font-size: 60px;
+  font-size: 4.5vw;
   text-align: center;
-  margin-top: 300px;
+  margin-top: 20vw;
   overflow: hidden;
   position: absolute;
 }
@@ -95,12 +95,11 @@ img {
   font-family: 'Libre Baskerville', serif;
   height: 100%;
   width: 100%;
-  font-size: 60px;
+  font-size: 4.5vw;
   text-align: center;
   overflow: hidden;
   position: absolute;
-  margin-top: 80px;
-  margin-bottom: 100px;
+  margin-top: 2vw;
 }
 
 .pp-kitchen-container {
@@ -157,12 +156,12 @@ img {
   font-family: 'Libre Baskerville', serif;
   height: 100%;
   width: 100%;
-  font-size: 60px;
+  font-size: 4.5vw;
   text-align: center;
   overflow: hidden;
   position: relative;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 .pp-attic-container {
