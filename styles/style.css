@@ -13,7 +13,7 @@ img {
   width: 100%;
 }
 .pp-page {
-  width: 100%
+  width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -65,6 +65,16 @@ img {
   overflow: hidden;
   transition: transform 2s;
   transform: rotate(-5deg);
+  transform-origin: right bottom;
+}
+
+.pp-branch--top:hover {
+  transform: rotate(0.5deg);
+  transform-origin: right bottom;
+}
+
+.pp-branch--bottom:hover {
+  transform: rotate(-0.5deg);
   transform-origin: right bottom;
 }
 
@@ -137,6 +147,10 @@ img {
   transition: margin-right 2s;
 }
 
+.pp-dress--top:hover{
+  margin-right: 5%
+}
+
 .pp-dress-trigger--active .pp-dress--top {
   margin-right: 20%;
 }
@@ -204,6 +218,12 @@ img {
   transform-origin: right bottom;
 }
 
+.pp-right--one:hover{
+  transform: rotateZ(15deg);
+  transform-origin: right bottom;
+  transition: transform 2s ease;
+}
+
 .pp-duster-trigger--active .pp-right--one {
   -webkit-animation-name: duster; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
@@ -256,4 +276,55 @@ img {
   z-index: 3;
   position: absolute;
   overflow: hidden;
+}
+
+.pp-conclude-container {
+  position: absolute;
+  width: 120%;
+  overflow: hidden;
+  margin-left: -20%;
+  margin-top: 10%;
+}
+
+.pp-conclude--back {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin-top: 0%;
+}
+
+.pp-conclude--left {
+  position: absolute;
+  float: left;
+  overflow: hidden;
+  margin-left: 12%;
+  width: 30vw;
+  margin-top: 43vw;
+  z-index: 2;
+}
+
+.pp-conclude--center {
+  position: absolute;
+  z-index: 3;
+  margin-top: 15%;
+  margin-left: 40%;
+  float: left;
+  width: 20vw;
+  overflow: hidden;
+}
+.pp-conclude--words {
+  z-index: 4;
+  font-family: 'Libre Baskerville', serif;
+  width: 32%;
+  font-size: 1.2vw;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2vw;
+  margin-top: 18%;
+  margin-left: 62%;
+  overflow: hidden;
+  position: absolute;
+  float: left;
+  background-color: white;
 }
